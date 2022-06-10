@@ -42,6 +42,15 @@ body{
 }
 
 
+.flex-container2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 60vh;
+}
+
 
 
 .login-container{
@@ -49,14 +58,13 @@ body{
     flex-direction: column;
     align-items: start;
     justify-content: space-around;
-    width: 40%;
+    width: 100%;
     min-height: 30vh;
     background-color: white;
     border: 1px solid lightgrey;
-    border-radius: 12px;
+    border-radius: 5px;
+    padding: 10px;
     
-    
-
 }
 
 .logo-container{
@@ -80,14 +88,12 @@ body{
     width: 100%;
     min-height: 30vh;
     
-    
-    
 }
 
 .input-formulario{
     display: flex;
+    justify-content: center;
     width: 100%;
-    
     
 }
 
@@ -152,7 +158,7 @@ body{
     display: flex;
     justify-content: center;
     text-align: center;
-    padding-top: 5px;
+    padding-top: 10px;
 }
 
 .container-facebook a{
@@ -173,20 +179,114 @@ body{
 
 .container-senha a{
     color: black;
+    font-size: 12px;
 }
 
 .formulario2{
     display: flex;
     flex-direction: column;
     
-    
-    
-    
 }
 
-.cadastro{
+.container-cadastro{
     width: 100%;
+    height: 40px;
+    margin-top: 20px;
+    padding: 10px;
     text-align: center;
-    border: 1px solid black;
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 5px;
 }
+
+
+.container-app{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px; 
+}
+
+.container-app-button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.container-app-button a{
+    padding: 5px;
+}
+.container-app img{
+    height: 40px;
+}
+
+
+@media (max-width: 650px){
+    body{
+        background-color: white;
+    }
+
+    .flex-container{        
+       width: 90%;
+       
+    }
+
+    .foto-container{
+        display: none;
+    }
+
+    .container-cadastro{
+        margin-top: 50px;
+    }
+}
+
+    @media  (max-width: 400px){
+        body{
+            background-color: white;
+        }
+    
+        .flex-container{        
+           width: 90%;
+           
+        }
+
+        .flex-container2{
+            height: 100%;
+        }
+    
+        .foto-container{
+            display: none;
+        }
+        
+    }
+
+    @media (max-width: 1280px){
+        body{
+            background-color: white;
+        }
+    
+        .flex-container{        
+           width: 100%;
+           justify-content: center;
+           
+        }
+
+        .flex-container2{
+            height: 100%;
+        }
+    
+        .foto-container{
+            display: none;
+        }
+    
+        .container-cadastro{
+            margin-top: 50px;
+        }
+    }
+        
+    
+
 
